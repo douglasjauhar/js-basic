@@ -65,25 +65,75 @@
 // document.write(arrayX[2])
 
 //Fungsi Padaa Javascript
-function hitungTambah(angka, angka2, angka3, angka4)
-{
-    var b = angka + angka2 + angka3 + angka4
-    document.getElementById("wrap").innerHTML = b;
-}
 
-function biodata(data)
-{
-document.write(`<div style="background : black;color : white";>
-<h3> Namas Saya ${data.nama}</h3>
-<h3>Umur Saya ${data.umur}</h3>
-<h3>Saya Kelas ${data.kelas}</h3>
-</div>`
-)
-}
+
+
+//Lingkup Variabel .
+// Variabel dikelompokan Scope, yang pertama lokal var, sama global
+
+var text = "Belajar Variabel Global"
+// function hitungTambah(angka, angka2, angka3, angka4)
+// {
+//     var b = angka + angka2 + angka3 + angka4
+//     document.getElementById("wrap").innerHTML = b;
+// }
+
+// function biodata(data)
+// {
+// document.write(`<div style="background : black;color : white";>
+// <h3> Namas Saya ${data.nama}</h3>
+// <h3>Umur Saya ${data.umur}</h3>
+// <h3>Saya Kelas ${data.kelas}</h3>
+// </div>`
+// )
+// }
 
 
 //Parameter Pada Javascript.
 // ("Bisa lempa nilai atau angka", "kirim ke 2")
-var data = {nama : "Alex", umur : "14 tahun", kelas : "3 SMP"}
-hitungTambah(7, 4, 5, 7 );
-biodata(data);
+// var data = {nama : "Alex", umur : "14 tahun", kelas : "3 SMP"}
+// hitungTambah(7, 4, 5, 7 );
+// biodata(data);
+
+// Return Pada Js, Mengambilakan nilai bukan print nilai, cara manggil dengan dengan getElementById
+
+function scopeVar (a, b, c) {
+    return a * b + c;
+}
+
+
+// Manipusi Array.
+// Push, Splice, Pop, Shift
+
+var a = [40, 30, 20]
+
+var bio = [{nama : "Edo"}, {nama : "Alex"}]
+
+// let appendData = {}
+// bio.push({nama : "Tio"})
+// Push
+// a.push(10, 20) // Untuk Append (Menambahkan) Kedalam Arrray dengan melanjutkan index terakhirnya
+
+//Splice
+// Punya Parameter bisa 3 (Statt, Yangmau diapus, Yang mau diappend) dengan indeks arraynya
+// a.splice(1, 1 , 78)
+// a.splice(2, 2)
+
+// Pop
+// Hapus Indeks Terakhir dari Array
+// a.pop()
+bio.pop()
+
+//Shift
+//Hapus Indeks Pertamanya
+// a.shift()
+bio.shift()
+
+
+console.log(bio)
+
+// scopeVar(text)
+document.getElementById("wrap").innerHTML = scopeVar(33330, 20, 30);
+
+
+// console.log(text2)
