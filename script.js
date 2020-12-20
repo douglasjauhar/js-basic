@@ -122,18 +122,79 @@ var bio = [{nama : "Edo"}, {nama : "Alex"}]
 // Pop
 // Hapus Indeks Terakhir dari Array
 // a.pop()
-bio.pop()
+// bio.pop()
 
 //Shift
 //Hapus Indeks Pertamanya
 // a.shift()
-bio.shift()
+// bio.shift()
+
+// let b = [1,2,4,5,6]
+
+// b.splice(3 , 1, 7)
+
+// console.log(b)
 
 
-console.log(bio)
+// console.log(bio)
 
 // scopeVar(text)
-document.getElementById("wrap").innerHTML = scopeVar(33330, 20, 30);
 
 
+// Conditonal
+function basicConditional(){
+    var hargaEs = 3000
+    var duit = 4000
+    var dibayar = true
+    const password = "123"
+    const input = 123
+    //Operater Mtk Js , + , - , /, *
+
+
+    if(password === input){
+        console.log("boleh masuk")
+    }else{
+        console.log("tisdak boleh masuk")
+    }
+    
+
+    // If Biasa
+    // if(duit >= hargaEs){
+    //     // kondisi jika terprnuhi
+    //     return  `Duitnya Kurang ${hargaEs + duit}`
+    //     // console.log("duitnya cukup")
+    // }else{
+    //     // kondisi jika tidak terpenuhi
+    //     return  `Duitnya Kurang ${hargaEs - duit}`
+    //     // console.log("duitnya tidak cukup")
+    // }
+
+    // Nested If
+    // if yang bercabang
+
+    // if(dibayar){
+    //     if(duit >= hargaEs){
+    //         console.log("Sudah dibayar dan uangnya cukup!")
+    //     }else{
+    //         console.log("Sudah dibayar dan uangnya tidak cukup!")
+    //     }
+    // }else{
+    //     console.log("Belum Dibayar!")
+    // }
+
+    // Ternary Legend
+    // 1.bikin var = kondisinya "?" else "":"" 
+    // var hasil = duit > hargaEs ? "Uang Cukup" : "Uang Tidak Cukup"
+
+    console.log(hasil)
+
+
+
+}
+
+
+
+document.getElementById("wrap").innerHTML = basicConditional();
+
+basicConditional()
 // console.log(text2)
