@@ -97,7 +97,7 @@ var text = "Belajar Variabel Global"
 
 // Return Pada Js, Mengambilakan nilai bukan print nilai, cara manggil dengan dengan getElementById
 
-function scopeVar (a, b, c) {
+function scopeVar(a, b, c) {
     return a * b + c;
 }
 
@@ -107,7 +107,7 @@ function scopeVar (a, b, c) {
 
 var a = [40, 30, 20]
 
-var bio = [{nama : "Edo"}, {nama : "Alex"}]
+var bio = [{ nama: "Edo" }, { nama: "Alex" }]
 
 // let appendData = {}
 // bio.push({nama : "Tio"})
@@ -142,59 +142,97 @@ var bio = [{nama : "Edo"}, {nama : "Alex"}]
 
 
 // Conditonal
-function basicConditional(){
-    var hargaEs = 3000
-    var duit = 4000
-    var dibayar = true
-    const password = "123"
-    const input = 123
-    //Operater Mtk Js , + , - , /, *
+// function basicConditional(){
+//     var hargaEs = 3000
+//     var duit = 4000
+//     var dibayar = true
+//     const password = "123"
+//     const input = 123
+//     //Operater Mtk Js , + , - , /, *
 
 
-    if(password === input){
-        console.log("boleh masuk")
-    }else{
-        console.log("tisdak boleh masuk")
-    }
-    
+//     if(password === input){
+//         console.log("boleh masuk")
+//     }else{
+//         console.log("tisdak boleh masuk")
+//     }
 
-    // If Biasa
-    // if(duit >= hargaEs){
-    //     // kondisi jika terprnuhi
-    //     return  `Duitnya Kurang ${hargaEs + duit}`
-    //     // console.log("duitnya cukup")
-    // }else{
-    //     // kondisi jika tidak terpenuhi
-    //     return  `Duitnya Kurang ${hargaEs - duit}`
-    //     // console.log("duitnya tidak cukup")
+
+//     // If Biasa
+//     // if(duit >= hargaEs){
+//     //     // kondisi jika terprnuhi
+//     //     return  `Duitnya Kurang ${hargaEs + duit}`
+//     //     // console.log("duitnya cukup")
+//     // }else{
+//     //     // kondisi jika tidak terpenuhi
+//     //     return  `Duitnya Kurang ${hargaEs - duit}`
+//     //     // console.log("duitnya tidak cukup")
+//     // }
+
+//     // Nested If
+//     // if yang bercabang
+
+//     // if(dibayar){
+//     //     if(duit >= hargaEs){
+//     //         console.log("Sudah dibayar dan uangnya cukup!")
+//     //     }else{
+//     //         console.log("Sudah dibayar dan uangnya tidak cukup!")
+//     //     }
+//     // }else{
+//     //     console.log("Belum Dibayar!")
+//     // }
+
+//     // Ternary Legend
+//     // 1.bikin var = kondisinya "?" else "":"" 
+//     // var hasil = duit > hargaEs ? "Uang Cukup" : "Uang Tidak Cukup"
+
+//     console.log(hasil)
+
+
+
+// }
+
+// function switchCase() {
+//     var a = "Alex"
+//     switch (a) {
+//         case "Alex":
+//             console.log("Benar namanya Alex")
+//             break;
+//         case "Edo" :
+//             console.log("Namanya edo")
+//             break;
+//         default:
+//         console.log("tidak ada nama")
+//     }
+// }
+function forLoop(data){
+    console.log(data)
+
+    // For Loop = Perulangan
+    // for(variable mulai, variabel batas, variabel perubahan){
+    //     mau diapain
     // }
-
-    // Nested If
-    // if yang bercabang
-
-    // if(dibayar){
-    //     if(duit >= hargaEs){
-    //         console.log("Sudah dibayar dan uangnya cukup!")
-    //     }else{
-    //         console.log("Sudah dibayar dan uangnya tidak cukup!")
-    //     }
-    // }else{
-    //     console.log("Belum Dibayar!")
+    // var i = 0
+    // var b = [4,5,6]
+    // console.log(b.length)
+    // for(i = 0; b.length ; i++){
+    //     // alert(i)
     // }
-
-    // Ternary Legend
-    // 1.bikin var = kondisinya "?" else "":"" 
-    // var hasil = duit > hargaEs ? "Uang Cukup" : "Uang Tidak Cukup"
-
-    console.log(hasil)
-
-
+    data.forEach(e => {
+        // console.log(`Namanya ${e.nama} Umurnya ${e.umur}`)
+        document.write(`<p style="color : red; background : black;"><br/>Namanya ${e.nama} Umurnya ${e.umur}</p>`)
+      
+    })
 
 }
 
 
 
-document.getElementById("wrap").innerHTML = basicConditional();
+// document.getElementById("wrap").innerHTML = basicConditional;
+// switchCase()
+var json = [{nama : "Alex", umur : 20}, {nama : "Edo", umur : 10}]
+forLoop(json)
+// document.getElementById("wrap").innerHTML = `` ;
 
-basicConditional()
+// basicConditional()
 // console.log(text2)
