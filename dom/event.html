@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+        <input type="number" id="bil1" value="" onchange="bilanganSatu()" required/>
+        <br>
+        <input type="number" id="bil2" value="" onchange="bilanganDua()" />
+        <br>
+        <select onchange="operators()" id="operator">
+            <option value="null">Pilih Operator</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">x</option>
+        </select>
+        <br>
+        <input type="submit" value="Hitung" onclick="hitung()"></input>
+        <br>
+        <h1>Hasilnya = <div id="hasil"></div> </h1>
+</body>
+<script src="events.js"></script>
+</html>
