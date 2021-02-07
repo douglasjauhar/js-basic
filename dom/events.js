@@ -10,7 +10,14 @@ function bilanganDua(){
 function operators(){
     oper = document.getElementById("operator").value
 }
-
+function resetField(){
+   
+    bil1 = document.getElementById("bil1").value
+    bil1 = ""
+    console.log(bil1)
+    // console.log(bil1)
+    bil2 = ""
+}
 function hitung(){
 
 var hasil = ""
@@ -30,4 +37,9 @@ var hasil = ""
 
     document.getElementById("hasil").innerHTML = hasil.toString()
     console.log(hasil)
+}
+function coba(){
+   if(bil1 > 20){
+       alert("Tidak boleh lebih dari 20")
+   }
 }

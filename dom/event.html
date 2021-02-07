@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <script>
+        var a = "Haloo"
+    </script>
 </head>
 <body>
-        <input type="number" id="bil1" value="" onchange="bilanganSatu()" required/>
+    <form id="resetField()">
+        <input type="number" id="bil1" value="" onchange="bilanganSatu()" onblur="coba()" required/>
         <br>
         <input type="number" id="bil2" value="" onchange="bilanganDua()" />
         <br>
@@ -18,7 +22,9 @@
             <option value="*">x</option>
         </select>
         <br>
+        <input type="submit" onclick="resetField()" value="Reset"></input>
         <input type="submit" value="Hitung" onclick="hitung()"></input>
+    </form>
         <br>
         <h1>Hasilnya = <div id="hasil"></div> </h1>
 </body>

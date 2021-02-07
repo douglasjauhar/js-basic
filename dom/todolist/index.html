@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <h3>To Do List App</h3>
+    <form action="#">
+        <input type="text" id="list">
+        <button onclick="add()">Add</button>
+    </form>
+    
+    <ul id="todo">
+    </ul>
+
+</body>
+<style>
+    .done {
+        text-decoration: line-through;
+    }
+</style>
+<script>
+    const todo = document.getElementById("todo")
+    function add() {
+        // Kodingan 1
+        let text = document.getElementById("list")
+        // console.log(text.value)
+        // console.log(todo)
+        // let li = document.createElement("li")
+        // let newText = document.createTextNode(text.value)
+        // console.log(newText)
+        // li.appendChild(newText)
+        // todo.appendChild(li)
+
+        let newTodo = "<li> <span onclick='coret(this)'> " + text.value + "</span> <span onclick='hapus(this)'>[x]<span></li>"
+        todo.insertAdjacentHTML('afterbegin', newTodo)
+        // Kodingan 2
+        text.value = ""
+    }
+    function coret(el) {
+        console.log(el)
+        el.classList.toggle('done')
+        // el.classList.coret('done')
+    }
+    function hapus(el){
+        el.parentElement.remove()
+    }
+
+</script>
+
+</html>
